@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700');
+
+@media only screen and (max-width: 500px) {
+    html, body {
+        padding: 0;
+        margin: 0;
+
+        width: 100%;
+        height: 100%;
+    }
+
+    * {
+        outline: none;
+        box-sizing: border-box;
+
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    .outer, .auth-form, .auth-form form, .auth-form form input, .auth-form form a {
+        width: 100% !important;
+    }
+} 
+
+html, body {
+    padding: 0;
+    margin: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
+* {
+    outline: none;
+    box-sizing: border-box;
+
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.outer {
+    width: 90%;
+    height: 100%;
+
+    position: relative;
+    margin: 0 auto;
+}
+
+.auth-form {
+    width: 30%;
+    min-width: 300px;
+
+    height: 100%;
+
+    float: right;
+
+    background-color: rgba(50, 50, 50, .9);
+}
+
+.auth-form form {
+
+    text-align: center;
+
+    height: 350px;
+
+    padding: 20px;
+
+    position: relative;
+    top: calc(50% - 175px);
+}
+
+.auth-form form input[type="password"] {
+    margin-bottom: 1em;
+}
+
+.auth-form form,
+.auth-form form input[type="text"],
+.auth-form form input[type="password"]{
+    width: 100%;
+
+    padding: 15px;
+
+    font-size: 10pt;
+
+    text-align: center;
+}
+
+.auth-form form input[type="text"]:not(.top),
+.auth-form form input[type="password"]:not(.top) {
+    margin-top: -1px;
+}
+
+.auth-form form input:not([type="submit"]) {
+    border: 1px solid #A9A9A9;
+}
+
+.auth-form form input[type="submit"] {
+    background-color: #009688;
+    color: white;
+    font-size: 10pt;
+    border: none;
+    border-bottom: 3px solid #00796B;
+    border-radius: 3px;
+
+    width: 50%;
+    padding: 10px;
+
+    font-weight: 500;
+}
+
+.auth-form form input[type="submit"]:active {
+    border-bottom: 1px solid #00796B;
+    margin-top: 2px;
+}
+
+.auth-form form a {
+    color: #E91E63;
+    text-decoration: none;
+
+    font-size: 10pt;
+}
+
+#errorLabel {
+    display: block;
+    color: #F44336;
+    font-size: small;
+    margin-bottom: 1em;
+}
+
+.user-icon {
+    width: 100px;
+    height: 100px;
+
+    padding: 1px;
+
+    margin-top: -50px;
+    margin-bottom: 1em;
+
+    margin-left: calc(50% - 50px);
+
+    color: white;
+}

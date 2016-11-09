@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500');
+
+@media only screen and (max-width: 500px) {
+    .outer {
+        width: 100% !important;
+    }
+
+    .navbar {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        background: #009688 !important;
+        margin: 0 !important;
+        width: 100% !important;
+        border-radius: 0 !important;
+        border: none !important;
+    }
+
+    #mainSearchBar {width: auto !important;}
+} 
+
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+
+    background: #ECECEC;
+}
+
+* {
+    outline: none !important;
+    box-sizing: border-box !important;
+
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none !important;
+    text-shadow: none !important;
+}
+
+.navbar {
+    padding-left: 3em;
+    padding-right: 3em;
+    background: #009688 !important;
+    margin: 0 !important;
+    width: 100% !important;
+    border-radius: 0 !important;
+    border: none !important;
+}
+
+.navbar-brand, p, a:not(.black) {
+    color: white !important;
+}
+
+#mainSearchBar, #mainSearchBtn {
+    border-radius: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+    height: 34px !important;
+    color: white !important;
+    border-bottom: 1px solid white !important;
+    resize: none;
+}
+
+#mainSearchBar {width: 350px;}
+.form-control::-webkit-input-placeholder { color: #EEEEEE; }
+
+#mainSearchBtn:active {
+    font-size: small;
+}
+
+.dropdown-toggle:active, .dropdown.open .dropdown-toggle {
+    background: #00796B !important;
+}
+
+.dropdown-menu>li:not(.divider) {
+    padding: 10px;
+}
+
+.dropdown-menu>li:hover, .dropdown-menu>li>a:hover {
+    background: #9E9E9E !important;
+}
+
+.black li a {padding: 20px;}
+
+.black, .black li, .black a, .black li a, .black p {
+    color: black !important;
+}
+
+.white, .white li, .white a, .white li a, .white p {
+    color: white !important;
+}
+
+.page-body {
+    height: calc(100% - 50px);
+}
+
+.feed-col, .right-list, .left-list {
+    height: 100%;
+
+    padding: 20px;
+}
+
+.feed-card {
+    width: 100%;
+    height: auto;
+
+    padding: 20px;
+
+    background: white;
+    box-shadow: 0 0 .5cm #DDDDDD;
+}
+
+.feed-card a:not(.feed-menu-handler) {
+    color: #80CBC4 !important;
+}
+
+.feed-menu-handler {
+    float: right;
+}
